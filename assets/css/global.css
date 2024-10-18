@@ -1,0 +1,22 @@
+:root {
+    --content-color-main: white;
+    --content-color-text: black;
+    --content-width: 1280px;
+}
+
+body {
+    width: var(--content-width);
+    margin: 0px auto 0px auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 5px 15px 5px;
+    width: 100%;
+    height: fit-content;
+    background-color: gray;
+}
