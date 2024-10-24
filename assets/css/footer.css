@@ -1,0 +1,169 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer .wrapper a {
+    position: relative;
+    transition: color 0.2s;
+}
+
+footer .wrapper a:hover::before {
+    background-color: var(--content-color-secondary);
+}
+
+footer .wrapper a::before {
+    content: "";
+    position: absolute;
+    z-index: 11;
+    width: 22px;
+    height: 22px;
+    left: -50px;
+    padding: 3px;
+    border-radius: 8px;
+    background-size: 18px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--content-color-outline);
+
+    transition: background-color 0.2s;
+}
+
+footer .wrapper .logo {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 256px;
+}
+
+footer .wrapper .logo img {
+    width: 256px;
+    object-fit: contain;
+}
+
+footer .wrapper .logo p {
+    margin: 0px;
+    line-height: 23px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+footer .wrapper .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer .wrapper .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer .wrapper .vertical-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1px;
+    background-color: var(--content-color-outline);
+}
+
+footer .wrapper .social a.instagram::before {
+    background-image: url("../images/icons/instagram.png");
+}
+
+footer .wrapper .social a.ekapija::before {
+    background-size: 14px 14px;
+    background-image: url("../images/icons/ekapija.png");
+}
+
+footer .wrapper .contact a.tag::before {
+    background-image: url("../images/icons/house.png");
+}
+
+footer .wrapper .contact a.phone::before {
+    background-image: url("../images/icons/phone.png");
+}
+
+footer .wrapper .contact a.mail::before {
+    background-image: url("../images/icons/email.png");
+}
+
+footer .wrapper .contact a.location::before {
+    background-image: url("../images/icons/location.png");
+}
+
+footer .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .copyright p {
+    margin: 5px 0px 10px 0px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (hover: hover) {
+    footer .wrapper a:hover {
+        color: var(--content-color-secondary);
+    }
+}
+
+@media not (hover: hover) {
+    footer .wrapper .vertical-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    footer .wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    footer .wrapper .logo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: none;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    footer .wrapper .logo p {
+        max-width: 256px;
+    }
+
+    footer .wrapper .contact {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    footer .wrapper .social {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    footer .wrapper a {
+        margin-left: 50px;
+    }
+
+    footer .copyright p {
+        margin: 5px 0px 10px 0px;
+        font-size: 12px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

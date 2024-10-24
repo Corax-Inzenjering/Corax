@@ -1,22 +1,47 @@
 :root {
     --content-color-main: white;
+    --content-color-secondary: red;
+    --content-color-outline: rgb(48, 48, 48);
     --content-color-text: black;
-    --content-width: 1280px;
+}
+
+@font-face {
+	font-family: "poppins-light";
+	font-weight: normal;
+    src: url("../fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: "poppins-extra-light";
+    font-weight: normal;
+    src: url("../fonts/Poppins-ExtraLight.ttf");
 }
 
 body {
-    width: var(--content-width);
+    position: relative;
+    font-family: poppins;
+    width: 1280px;
     margin: 0px auto 0px auto;
+    color: var(--content-color-text);
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+a {
+    color: var(--content-color-text);
+    text-decoration: none;
+}
 
-    padding: 15px 5px 15px 5px;
-    width: 100%;
-    height: fit-content;
-    background-color: gray;
+@media (hover: hover) {
+    a {
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: var(--content-color-secondary);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        width: 100%;
+    }
 }
