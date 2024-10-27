@@ -1,0 +1,117 @@
+.heading {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 30px;
+    z-index: 2;
+    padding: 0px 5px 0px 5px;
+    font-family: poppins-extra-light;
+    width: fit-content;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    background-color: var(--content-color-main);
+
+    transition-duration: calc(var(--transition-duration-medium) / 2);
+}
+
+.heading.active h1 {
+    opacity: 1;
+}
+
+.heading.inactive h1 {
+    opacity: 0;
+}
+
+.heading::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--content-color-outline);
+    transition-duration: var(--transition-duration-medium);
+    transition-delay: calc(var(--transition-duration-medium) / 2);
+}
+
+.heading.inactive::before {
+    transform: scaleX(0);
+}
+
+.heading.active::before {
+    transform: scaleX(1);
+}
+
+.item {
+    outline: 1px solid var(--content-color-outline);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item img {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.item h2 {
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    bottom: 10px;
+
+    font-size: 22px;
+    font-family: poppins-extra-light;
+    font-weight: normal;
+    text-align: center;
+    background-color: var(--content-color-main);
+
+    clip-path: inset(0% 50%);
+    opacity: 0;
+    transition-duration: var(--transition-duration-short);
+}
+
+.item:hover h2 {
+    clip-path: inset(0% 0%);
+    opacity: 1;
+}
+
+#top-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#top-projects .item img {
+    width: 896px;
+}
+
+#top-projects .more-top-projects {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top-projects .more-top-projects .item img {
+    width: auto;
+    height: 144px;
+}
+
+#top-projects .more-top-projects .item h2 {
+    font-size: 18px;
+}
+
+@media (hover: hover) {
+
+}

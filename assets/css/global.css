@@ -3,6 +3,10 @@
     --content-color-secondary: red;
     --content-color-outline: rgb(48, 48, 48);
     --content-color-text: black;
+
+    --transition-duration-short: 0.2s;
+    --transition-duration-long: 2s;
+    --transition-duration-medium: 1s;
 }
 
 @font-face {
@@ -32,7 +36,7 @@ a {
 
 @media (hover: hover) {
     a {
-        transition: color 0.2s;
+        transition-duration: var(--transition-duration-short);
     }
 
     a:hover {
