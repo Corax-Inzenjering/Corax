@@ -1,14 +1,13 @@
 {
-    "temporary":
-    {
-        "name": "Test Projekat",
-        "images":
+    "projects":
+    [
         {
-            "0": "../assets/images/projects/temporary/0.jpg",
-            "1": "../assets/images/projects/temporary/1.jpg",
-            "2": "../assets/images/projects/temporary/2.jpg",
-            "3": "../assets/images/projects/temporary/3.jpg",
-            "4": "../assets/images/projects/temporary/4.jpg"
+            "id": "temporary",
+            "name": "Test Projekat 123456789",
+            "images": [
+                "0.jpg",
+                "1.jpg"
+            ]
         }
-    }
+    ]
 }

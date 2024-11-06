@@ -21,6 +21,11 @@
     src: url("../fonts/Poppins-ExtraLight.ttf");
 }
 
+html {
+    height: 100%;
+    user-select: none;
+}
+
 body {
     position: relative;
     font-family: poppins;

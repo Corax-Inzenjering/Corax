@@ -115,7 +115,7 @@ header .hamburger-menu .close img {
     padding: 10px;
 }
 
-@media screen and (max-width: 1279px) {
+@media (max-width: 1280px) {
     header .wrapper .logo img {
         margin-left: 50px;
     }
@@ -125,13 +125,13 @@ header .hamburger-menu .close img {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
     header .wrapper {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media (max-width: 425px) {
     header .wrapper .logo img {
         margin-left: 10px;
     }

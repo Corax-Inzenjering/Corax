@@ -92,4 +92,38 @@
 #main-info .text p {
     max-width: 50%;
     text-align: justify;
+    margin: 0px;
+}
+
+#main-info .text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin: 0px;
+}
+
+main.inactive {
+    display: none;
+}
+
+main.active {
+    display: block;
+}
+
+#error h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#error.inactive {
+    display: none;
+}
+
+#error.active {
+    display: block;
+}
+
+footer.inactive {
+    display: none;
 }

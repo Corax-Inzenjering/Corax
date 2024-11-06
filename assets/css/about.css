@@ -1,0 +1,148 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+main .main-image {
+    width: 100%;
+    pointer-events: none;
+    position: relative;
+}
+
+main .main-image img {
+    width: 100%;
+}
+
+main article p {
+    text-align: center;
+    margin: 0px;
+}
+
+main article.about-company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+main article.about-company .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    gap: 50px;
+    padding: 0px 100px 0px 100px;
+}
+
+main article.company-message {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+main article.company-message .message {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main article.company-message .message .heading h1 {
+    margin: 0px;
+}
+
+main article.company-message .company-ceo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main article.company-message .company-ceo img {
+    width: 384px;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+main article.company-message .company-ceo small {
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1280px) {
+    main article {
+        padding: 0px 25px 0px 25px;
+    }
+}
+
+@media (width < 1280px) and (width >= 1024px) {
+    main article.company-message p {
+        text-align: justify;
+    }
+}
+
+@media (width < 1024px) {
+    main article.about-company .text {
+        padding: 0px;
+    }
+
+    main article.company-message {
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    main article.about-company {
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    main article.about-company .text {
+        gap: 30px;
+    }
+
+    main article p {
+        text-align: justify;
+    }
+
+    main article.company-message .message {
+        gap: 30px;
+    }
+}
+
+@media (width < 768px) {
+    main .main-image {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        margin-bottom: 50px;
+    }
+
+    main article p {
+        font-size: 14px;
+    }
+
+    main article.company-message {
+        margin-top: 50px;
+    }
+    
+    main article.company-message .company-ceo img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    main article {
+        padding: 0px 15px 0px 15px;
+    }
+
+    main article p {
+        font-size: 12px;
+    }
+}

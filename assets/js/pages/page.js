@@ -7,6 +7,7 @@ export function initPage() {
 
     window["body"] = document.querySelector("body");
 	window["header"] = document.querySelector("header");
+	window["footer"] = document.querySelector("footer");
 
 	_scroll.initScroll();
 	_header.initHeader();

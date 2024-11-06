@@ -1,8 +1,8 @@
 import * as _page from "./page.js";
 
-window.addEventListener("load", () => { initIndexPage(); });
+window.addEventListener("load", () => { initDefault(); });
 
-function initIndexPage() {
+function initDefault() {
     _page.initPage();
     _page.scrollHandler.handlePageScrolling();
 }

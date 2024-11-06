@@ -1,12 +1,161 @@
-<html>
-    <head>
-        <title>O Nama | Corax Inženjering</title>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="images/icons/icon.png">
-        <meta name="theme-color" content="white">
-        <meta name="author" content="Nikola Zagorac">
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html>
+
+<html lang="sr">
+
+<head>
+    <title>Projektni Biro | Corax Inženjering</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/icons/icon.png">
+    <meta name="theme-color" content="white">
+    <meta name="author" content="Nikola Zagorac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="Serbian">
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/elements/heading.css">
+
+    <script type="module" src="../assets/js/pages/default.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="distancer"></div>
+        <div class="wrapper">
+            <picture class="logo">
+                <source srcset="../assets/images/logo-1.png" media="(width < 1280px)">
+                <source srcset="../assets/images/logo-0.png" media="(width >= 1280px)">
+                <img src="../assets/images/logo-0.png">
+            </picture>
+            <nav class="navigation-pc">
+                <a href="../index">Početna</a>
+                <a href="../projects/">Projekti</a>
+                <a href="../references/">Reference</a>
+                <a href="../about">O Nama</a>
+                <a href="../contact">Kontakt</a>
+            </nav>
+            <div class="hamburger active">
+                <img src="../assets/images/icons/hamburger.png">
+            </div>
+        </div>
+        <div class="hamburger-menu inactive">
+            <div class="close">
+                <img src="../assets/images/icons/close.png">
+            </div>
+            <nav class="navigation-phone">
+                <a href="../index">Početna</a>
+                <a href="../projects/">Projekti</a>
+                <a href="../references/">Reference</a>
+                <a href="../about">O Nama</a>
+                <a href="../contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <picture class="main-image">
+            <source srcset="../assets/images/pages/about-main-image-mobile.jpg" media="(width < 768px)">
+            <source srcset="../assets/images/pages/about-main-image.jpg" media="(width > 768px)">
+            <img src="../assets/images/pages/about-main-image.jpg">
+        </picture>
+        <article class="about-company">
+            <div class="heading inactive" data-scroll data-mode="once" data-offset="100">
+                <h1>UPOZNAJTE NAŠU KOMPANIJU</h1>
+            </div>
+            <div class="text">
+                <p>
+                    Projektni biro “CORAX INŽENJERING”, osnovan je 2018. godine u Novoj Pazovi, na čelu sa Natašom Došenović
+                    mast.inž.arh., odgovornim projektantom i urbanistom i za kratko vreme od biroa sa lokalnim domenom
+                    postala firma koja izrađuje projektno - tehničku dokumentaciju najšireg spektra na sve većem područiju.
+                </p>
+                <p>
+                    Bavimo se planiranjem, projektovanjem i realizacijom različitih vrsta građevinskih i infrastrukturnih
+                    projekata. To uključuje izradu projektne dokumentacije, konsultacije sa investitorima, nadzor nad
+                    izvođenjem radova i usklađivanje svih potrebnih dozvola i Zakonskih regulativa. Postigli smo velike
+                    uspehe u projektovanju industrijskih objekata različitih namena, a poseban značaj pridajemo stambenim i
+                    komercijalnim objektima.
+                </p>
+                <p>
+                    Sarađujemo sa timovima stručnjaka iz oblasti konstrukcija,
+                    hidro projekata, elektro projekata, saobraćajne infrastrukture i slično.
+                </p>
+                <p>
+                    Svi projekti se u potpunosti izrađuju po važećim propisima
+                    i zakonima Republike Srbije i svi su pokriveni validnom licencom.
+                </p>
+                <p>
+                    Osim gore navedenih oblasti delovanja, specijalizovani smo za izradu Urbanističkih planova i projekata,
+                    kao i za pružanje stručnih usluga iz oblasti urbanizma. Imamo veliki uspeh u planiranju i projektovanju
+                    prostora u skladu sa važećom Zakonskom i Planskom regulativom, standardima i potrebama klijenata, kao i
+                    sa održivim razvojem i zaštitom životne sredine.
+                </p>
+            </div>
+        </article>
+        <article class="company-message">
+            <section class="company-ceo">
+                <img src="https://placehold.co/512x512?text=Slika">
+                <small>mast.inž.arh. Nataša Došenović</small>
+            </section>
+            <section class="message">
+                <div class="heading inactive" data-scroll data-mode="once" data-offset="100">
+                    <h1>NAŠA PORUKA</h1>
+                </div>
+                <p>
+                    Dobrodošli na sajt našeg projektnog biroa! Mi smo tim stručnjaka sa višegodišnjim iskustvom u oblasti
+                    urbanizma, arhitekture i planiranja, posvećen stvaranju održivih i funkcionalnih prostora. Naša misija
+                    je da kroz kvalitetno projektovanje doprinosimo unapređenju životne sredine i poboljšanju kvaliteta
+                    života zajednice.
+                </p>
+                <p>
+                    Svaki projekat za nas predstavlja izazov i priliku da našim klijentima obezbedimo najbolja rešenja,
+                    usklađena sa Zakonskim normama, ekološkim standardima i društvenim potrebama. Saradnja sa investitorima,
+                    stručnjacima i lokalnim zajednicama nam je prioritet, jer smatramo da je zajednički rad ključ uspeha.
+                </p>
+                <p>
+                    Bilo da je reč o izradi urbanističkih planova, detaljnih projekata ili savetovanju u procesu dobijanja
+                    potrebnih dozvola, mi smo tu da vas vodimo kroz svaki korak, sa pažnjom na svaki detalj.
+                </p>
+                <p>
+                    Verujemo da kvalitetan prostor ne znači samo lepu arhitekturu, već i održiv razvoj, funkcionalnost,
+                    estetske vrednosti i odgovornost prema prirodi. Sa nama, svaki projekat postaje siguran temelj za
+                    budućnost.
+                </p>
+                <p>
+                    Hvala što ste nas posetili. Radujemo se mogućnosti da zajedno ostvarimo vaše ideje i vizije!
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../assets/images/logo-2.png">
+                <p>
+                    Projektni biro Corax Inženjering bavi se poslovima iz oblasti arhitekture i urbanizma, prateći
+                    vrhunske standarde u projektovanju i dizajnu.
+                </p>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="social">
+                <a class="instagram" title="Instagram" rel="nofollow"
+                    href="https://www.instagram.com/corax_inzenjering/">@corax_inzenjering</a>
+                <a class="ekapija" title="eKapija" rel="nofollow"
+                    href="https://www.ekapija.com/company/news/174213/corax-inzenjering">eKapija portal</a>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="contact">
+                <a class="tag" href="index.html" title="Početna stranica">Projektni Biro est. 2018</a>
+                <a class="phone" href="tel:+38169705840" title="Pozovite nas">+381 69 705-840</a>
+                <a class="mail" href="mailto:office@corax.com" title="Pošalji mejl">office@corax.com</a>
+                <a class="location" href="https://maps.app.goo.gl/RufzPCxDYZR2fz7Q9" title="Pogledaj lokaciju">Cara
+                    Dušana 150, Nova Pazova</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Corax Inženjering d.o.o. Sva prava zadržana.</p>
+        </div>
+    </footer>
+</body>
+
 </html>
