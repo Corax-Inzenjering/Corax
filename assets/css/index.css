@@ -9,11 +9,21 @@
     aspect-ratio: 16/9;
 
     /* REMOVE THIS */
-    background-image: url("../images/projects/temporary/0.jpg");
+    background-image: url("../images/pages/index-main-image.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
     background-attachment: local;
+}
+
+#hero-image::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, var(--content-color-main) 100%);
 }
 
 #hero-image img {
@@ -51,12 +61,12 @@
 }
 
 #hero-image .content .title.inactive {
-    clip-path: inset(0% 50%);
+    clip-path: inset(-1% 50%);
     opacity: 0;
 }
 
 #hero-image .content .title.active {
-    clip-path: inset(0% 0%);
+    clip-path: inset(-1% -1%);
     opacity: 1;
 }
 
@@ -83,17 +93,14 @@
 
 #showcase article {
     --transition-duration: 1s;
+    --vertical-offset: 100px;
 
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: var(--vertical-offset);
 
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#showcase article.center {
-    margin-bottom: 200px;
 }
 
 #showcase article .heading {
@@ -186,17 +193,17 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
-    padding: 20px;
+    padding: 30px;
     gap: 20px;
     max-width: 640px;
     left: 50%;
     right: auto;
-    bottom: -100px;
+    bottom: calc(-1 * var(--vertical-offset));
 
     transition-duration: var(--transition-duration);
 }
 
-#showcase article.right .text {
+#showcase article.left .text {
     left: 50%;
     right: auto;
 }
@@ -209,9 +216,23 @@
 #showcase article.center .text {
     left: auto;
     right: auto;
-    max-width: 426px;
     gap: 20px;
-    bottom: -200px;
+}
+
+#showcase article .text.left {
+    left: 50%;
+    right: auto;
+}
+
+#showcase article .text.right {
+    left: auto;
+    right: 50%;
+}
+
+#showcase article .text.center {
+    left: auto;
+    right: auto;
+    gap: 20px;
 }
 
 #showcase article.inactive .text {
@@ -227,6 +248,8 @@
 #showcase article .text p {
     text-align: justify;
     margin: 0px;
+    word-spacing: 8px;
+    line-height: 2;
 }
 
 #showcase article .text h2 {
@@ -243,7 +266,7 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
     #hero-image .content .title {
         text-shadow: 0px 0px;
     }
@@ -290,10 +313,20 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media (width < 1024px) {
     #hero-image .content .title {
         font-size: 30px;
         padding: 0px 20px 0px 25px;
+    }
+
+    #showcase {
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    #showcase article {
+        padding: 0px;
+        margin-bottom: 0px;
     }
 
     #showcase article .heading h1 {
@@ -319,60 +352,6 @@
     #showcase article .text a {
         font-size: 11px;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .space {
-        height: 50px;
-    }
-
-    #hero-image .content .title {
-        font-size: 24px;
-        text-align: center;
-        padding: 0px 10px 0px 15px;
-        letter-spacing: 2px;
-    }
-
-    #showcase {
-        gap: 100px;
-    }
-
-    #showcase article {
-        padding: 0px;
-        margin-bottom: 0px;
-    }
-
-    #showcase article.center {
-        margin-bottom: 0px;
-    }
-
-    #showcase article .heading h1 {
-        font-size: 18px;
-    }
-
-    #showcase article .text {
-        gap: 5px;
-    }
-
-    #showcase article .text p {
-        font-size: 12px;
-    }
-    
-    #showcase article .text h2 {
-        font-size: 18px;
-    }
-    
-    #showcase article .text a {
-        font-size: 10px;
-    }
-
-    #showcase article .text {
-        max-width: auto;
-        left: auto;
-        right: auto;
-        position: relative;
-        bottom: 0px;
-    }
 
     #showcase article.left .text {
         left: auto;
@@ -388,7 +367,67 @@
         left: auto;
         right: auto;
         max-width: auto;
-        bottom: 0px;
+    }
+
+    #showcase article .text.left {
+        left: auto;
+        right: auto;
+    }
+    
+    #showcase article .text.right {
+        left: auto;
+        right: auto;
+    }
+    
+    #showcase article .text.center {
+        left: auto;
+        right: auto;
+        max-width: auto;
+    }
+
+    #showcase article .text {
+        max-width: auto;
+        left: auto;
+        right: auto;
+        position: relative;
+        bottom: 64px;
+    }
+}
+
+@media (width < 768px) {
+    .space {
+        height: 50px;
+    }
+
+    #hero-image .content .title {
+        font-size: 24px;
+        text-align: center;
+        padding: 0px 10px 0px 15px;
+        letter-spacing: 2px;
+    }
+
+    #showcase {
+        gap: 100px;
+    }
+
+    #showcase article.center {
+        margin-bottom: 0px;
+    }
+
+    #showcase article .heading h1 {
+        font-size: 18px;
+    }
+
+    #showcase article .text p {
+        font-size: 12px;
+    }
+    
+    #showcase article .text h2 {
+        font-size: 18px;
+    }
+    
+    #showcase article .text a {
+        font-size: 10px;
     }
 
     #showcase article .text::before {
@@ -398,5 +437,29 @@
 
     #showcase article img {
         outline: 0px;
+    }
+
+    #showcase article .text {
+        bottom: 0px;
+    }
+}
+
+@media (width < 425px) {
+    #hero-image .content .title {
+        font-size: 20px;
+    }
+
+    #showcase {
+        gap: 50px;
+    }
+
+    #showcase article .heading h1 {
+        font-size: 16px;
+    }
+}
+
+@media (width < 375px) {
+    #hero-image .content .title {
+        font-size: 18px;
     }
 }
