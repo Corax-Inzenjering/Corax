@@ -452,10 +452,6 @@
     #showcase {
         gap: 50px;
     }
-
-    #showcase article .heading h1 {
-        font-size: 16px;
-    }
 }
 
 @media (width < 375px) {
