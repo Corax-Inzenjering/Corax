@@ -16,10 +16,6 @@ footer .wrapper a {
     transition: color 0.2s;
 }
 
-footer .wrapper a:hover::before {
-    background-color: var(--content-color-secondary);
-}
-
 footer .wrapper a::before {
     content: "";
     position: absolute;
@@ -118,6 +114,10 @@ footer .copyright p {
 @media (hover: hover) {
     footer .wrapper a:hover {
         color: var(--content-color-secondary);
+    }
+
+    footer .wrapper a:hover::before {
+        background-color: var(--content-color-secondary);
     }
 }
 
