@@ -1,0 +1,105 @@
+{
+    "projects":
+    [
+        {
+            "id": "kondominijumi",
+            "name": "Kondominijumi",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ]
+        },
+        {
+            "id": "kalvarija",
+            "name": "Kalvarija",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg",
+                "3.jpg"
+            ]
+        },
+        {
+            "id": "hala01",
+            "name": "Hala 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        },
+        {
+            "id": "luxfer",
+            "name": "Luxfer",
+            "images": [
+                "0.jpg"
+            ]
+        },
+        {
+            "id": "enterijeri01",
+            "name": "Enterijeri 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        },
+        {
+            "id": "enterijeri01",
+            "name": "Enterijeri 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        },
+        {
+            "id": "enterijeri01",
+            "name": "Enterijeri 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        },
+        {
+            "id": "enterijeri01",
+            "name": "Enterijeri 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        },
+        {
+            "id": "enterijeri01",
+            "name": "Enterijeri 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        },
+        {
+            "id": "enterijeri01",
+            "name": "Enterijeri 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        },
+        {
+            "id": "enterijeri01",
+            "name": "Enterijeri 01",
+            "images": [
+                "0.jpg",
+                "1.jpg",
+                "2.jpg"
+            ]
+        }
+    ]
+}

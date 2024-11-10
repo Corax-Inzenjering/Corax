@@ -2,7 +2,9 @@ import * as _tools from "../tools.js";
 import * as _header from "./header.js";
 import * as _scroll from "../scrollHandler.js";
 
-export function initPage() {
+initPage();
+
+function initPage() {
 	window["tools"] = _tools;
 
     window["body"] = document.querySelector("body");

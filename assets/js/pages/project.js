@@ -55,7 +55,7 @@ async function initProject(project_name) {
 }
 
 async function initProjectsJson() {
-    let response = await fetch("../assets/projects.json");
+    let response = await fetch("../assets/data/projects.json");
         if (!response.ok) {
             alert("Error loading project.");
         }

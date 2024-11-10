@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
     <head>
         <title>Naši Projekti | Corax Inženjering</title>
@@ -5,11 +7,14 @@
         <link rel="icon" type="image/x-icon" href="images/icons/icon.png">
         <meta name="theme-color" content="white">
         <meta name="author" content="Nikola Zagorac">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="language" content="Serbian">
 
         <link rel="stylesheet" href="../assets/css/global.css">
         <link rel="stylesheet" href="../assets/css/header.css">
         <link rel="stylesheet" href="../assets/css/footer.css">
         <link rel="stylesheet" href="../assets/css/projects.css">
+        <link rel="stylesheet" href="../assets/css/elements/heading.css">
 
         <script type="module" src="../assets/js/pages/projects.js"></script>
     </head>
@@ -47,29 +52,20 @@
             </div>
         </header>
         <main>
-            <div class="heading inactive" data-scroll data-mode="once">
+            <div id="top-projects-heading" class="heading inactive" data-scroll data-mode="once">
                 <h1>ISTAKNUTI PROJEKTI</h1>
             </div>
             <section id="top-projects">
-                <a class="item" href="../project?p=temporary">
+                <a class="item top-project" href="../project?p=temporary">
                     <h2>Projekat 1</h2>
                     <img src="../assets/images/projects/temporary/0.jpg">
                 </a>
                 <div class="more-top-projects">
-                    <a class="item">
-                        <h2>Projekat 2</h2>
-                        <img src="../assets/images/projects/temporary/1.jpg">
-                    </a>
-                    <a class="item">
-                        <h2>Projekat 3</h2>
-                        <img src="../assets/images/projects/temporary/2.jpg">
-                    </a>
-                    <a class="item">
-                        <h2>Projekat 4</h2>
-                        <img src="../assets/images/projects/temporary/3.jpg">
-                    </a>
                 </div>
             </section>
+            <div id="other-projects-heading" class="heading inactive" data-scroll data-mode="once">
+                <h1>OSTALI PROJEKTI</h1>
+            </div>
             <section id="other-projects">
 
             </section>
