@@ -4,7 +4,6 @@ import * as _slideshow from "../slideshow.js";
 window.addEventListener("load", () => { initIndexPage(); });
 
 function initIndexPage() {
-    _page.initPage();
     _page.scrollHandler.handlePageScrolling();
 
     initProject(getProjectName());
