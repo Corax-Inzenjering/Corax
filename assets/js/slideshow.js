@@ -5,7 +5,7 @@ let currentImageIndex = 0;
 let slideTimeoutId = -1;
 let slideTransitioning = false;
 
-const slideDuration = 2500;
+const slideDuration = 4000;
 const slideTransitionDuration = 1000;
 
 export function initSlides() {
@@ -79,7 +79,7 @@ function scrollIntoViewHorizontally (container, child)
 	}
 }
 
-function setActiveImage(index) {
+export function setActiveImage(index) {
 	setActiveImageSelector(index);
 	tools.showElement(imageSelectors[currentImageIndex], false);
 	tools.showElement(imageSelectors[index], true);
