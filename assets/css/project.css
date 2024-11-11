@@ -168,6 +168,6 @@ footer.inactive {
 
 @media (max-width: 425px) {
     main {
-        padding: 0px;
+        padding: 10px;
     }
 }
