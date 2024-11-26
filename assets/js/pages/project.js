@@ -21,7 +21,7 @@ async function initProject(project_name) {
         let json = await initProjectsJson();
         for (let entry of json.projects) {
             if (entry.id == project_name) {
-                document.querySelector("title").innerHTML = entry.name.concat(" | Corax Inženjering");
+                document.title = entry.name.concat(" | Corax Inženjering");
                 document.getElementById("main-info").querySelector(".heading").querySelector("h1").innerHTML = entry.name;
 
                 let noInfo = false;
@@ -86,7 +86,9 @@ async function initProject(project_name) {
                 }
             }
         }
-        _slideshow.initSlides();
+        if (slideshow.querySelector(".images").children > 1) {
+            _slideshow.initSlides();
+        }
     }
     catch(e) {
         tools.showElement(body.querySelector("main"), false);

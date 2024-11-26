@@ -39,6 +39,13 @@
             ]
         },
         {
+            "id": "kuca01",
+            "name": "Stambeni Objekat",
+            "images": [
+                "01.jpg"
+            ]
+        },
+        {
             "id": "enterijeri01",
             "name": "Enterijeri 01",
             "images": [
