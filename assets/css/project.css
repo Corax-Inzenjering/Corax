@@ -8,7 +8,8 @@
 #slideshow .main-image {
     width: 1280px;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     outline: 1px solid var(--content-color-outline);
 }
 
@@ -24,7 +25,8 @@
 #slideshow .images img {
     aspect-ratio: 16/9;
     width: 256px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 1px solid var(--content-color-outline);
 }
 
@@ -122,6 +124,8 @@ footer.inactive {
     }
 
     #main-info .text p {
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
         max-width: max-content;
         align-self: center;
     }

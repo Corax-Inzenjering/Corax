@@ -11,6 +11,8 @@
     z-index: 2;
     padding: 0px 5px 0px 5px;
     font-family: poppins-extra-light;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-weight: normal;
     font-style: italic;

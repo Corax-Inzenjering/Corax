@@ -30,14 +30,18 @@
     font-weight: normal;
     font-family: poppins-extra-light;
     letter-spacing: 2px;
-    user-select: text;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
 }
 
 #all-news article a img {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     outline: 1px solid var(--content-color-outline);
 }
 

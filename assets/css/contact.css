@@ -146,6 +146,8 @@
 #contact-form .submit {
     margin-left: auto;
     margin-right: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-weight: normal;
     font-family: poppins-extra-light;

@@ -1,7 +1,9 @@
 header {
     width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
-    --heder-height: 94px;
+    --header-height: 94px;
 }
 
 header .distancer {
@@ -104,7 +106,7 @@ header .hamburger-menu .navigation-phone a {
 header .hamburger-menu .close {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
 
     width: 100%;
 }

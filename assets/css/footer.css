@@ -30,7 +30,7 @@ footer .wrapper a::before {
     background-repeat: no-repeat;
     background-color: var(--content-color-outline);
 
-    transition: background-color 0.2s;
+    transition-duration: var(--transition-duration-short);
 }
 
 footer .wrapper .logo {
@@ -42,7 +42,8 @@ footer .wrapper .logo {
 
 footer .wrapper .logo img {
     width: 256px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 footer .wrapper .logo p {
