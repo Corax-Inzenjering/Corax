@@ -86,7 +86,7 @@ async function initProject(project_name) {
                 }
             }
         }
-        if (slideshow.querySelector(".images").children > 1) {
+        if (slideshow.querySelector(".images").children.length > 1) {
             _slideshow.initSlides();
         }
     }
