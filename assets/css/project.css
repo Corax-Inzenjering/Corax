@@ -99,6 +99,10 @@ footer.inactive {
     #slideshow .main-image {
         width: 100%;
     }
+
+    #main-info .text ul {
+        padding-left: 25px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -138,5 +142,10 @@ footer.inactive {
 @media (max-width: 425px) {
     main {
         padding: 10px;
+    }
+
+    #main-info .text ul {
+        gap: 10px;
+        padding-left: 20px;
     }
 }
